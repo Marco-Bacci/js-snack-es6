@@ -1,25 +1,34 @@
 const bicycles = [
   {
     brand : `bianchi`,
-    weight : `8`
+    weightKg : `8`
   },
   {
     brand : `colnago`,
-    weight : `7.5`
+    weightKg : `7.5`
   },
   {
     brand : `canyon`,
-    weight : `7.7`
+    weightKg : `7.7`
   },
   
   {
     brand : `pinarello`,
-    weight : `8.5`
+    weightKg : `8.5`
   },
   {
     brand : `trek`,
-    weight : `7.3`
+    weightKg : `7.3`
   }
 ]
+// determino il primo indice dell'array per compararlo con gli altri
+let lightest = bicycles[0]
+// ciclo l'array per comparare tutti gli elementi
+for(i=0; i<bicycles.length; i++){
+  if(lightest.weightKg > bicycles[i].weightKg){
+    lightest =  bicycles[i]
 
-console.log(bicycles[0])
+  }
+}
+
+console.log(lightest)
