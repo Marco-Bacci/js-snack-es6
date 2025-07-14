@@ -25,7 +25,7 @@ const bicycles = [
 let lightest = bicycles[0]
 // ciclo l'array per comparare tutti gli elementi
 for(i=0; i<bicycles.length; i++){
-  if(lightest.weightKg > bicycles[i].weightKg){
+  if(bicycles[i].weightKg < lightest.weightKg ){
     lightest =  bicycles[i]
 
   }
