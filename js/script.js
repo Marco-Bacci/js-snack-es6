@@ -66,4 +66,9 @@ function getRandomNumber (){
 }
 let random = getRandomNumber()
 console.log(random)
-
+// ciclo l'array per andare a cambiare il valore delle proprieta points e fault con la funzione 
+for(let i =0; i<team.length; i++){
+  team[i].points = random
+  team[i].faults = random
+}
+console.log(team)
