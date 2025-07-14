@@ -65,10 +65,18 @@ function getRandomNumber (){
   return Math.floor(Math.random()*100) +1
 }
 let random = getRandomNumber()
+let random2 = getRandomNumber()
 console.log(random)
 // ciclo l'array per andare a cambiare il valore delle proprieta points e fault con la funzione 
 for(let i =0; i<team.length; i++){
   team[i].points = random
-  team[i].faults = random
+  team[i].faults = random2
 }
 console.log(team)
+
+// const newTeam = [
+//   {
+//     nome : [`team.nome`],
+//     points : [`team.faults`]
+//   }
+// ]
