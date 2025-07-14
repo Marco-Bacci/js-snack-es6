@@ -60,17 +60,15 @@ const team = [
   },
 ];
 
-// imposto una funziona per trovare un numero randomico e la imposto ad una variabile
+// imposto una funziona per trovare un numero randomico 
 function getRandomNumber() {
   return Math.floor(Math.random() * 100) + 1;
 }
 
 // ciclo l'array per andare a cambiare il valore delle proprieta points e fault con la funzione
 for (let i = 0; i < team.length; i++) {
-  let random = getRandomNumber();
-  let random2 = getRandomNumber();
-  team[i].points = random;
-  team[i].faults = random2;
+  team[i].points = getRandomNumber()
+  team[i].faults = getRandomNumber()
 }
 console.log(team);
 
