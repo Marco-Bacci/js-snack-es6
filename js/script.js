@@ -59,3 +59,11 @@ const team = [
     faults: 0,
   },
 ];
+
+// imposto una funziona per trovare un numero randomico e la imposto ad una variabile
+function getRandomNumber (){
+  return Math.floor(Math.random()*100) +1
+}
+let random = getRandomNumber()
+console.log(random)
+
