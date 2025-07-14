@@ -78,14 +78,13 @@ console.log(team);
 
 newTeam = [];
 
+// ciclo il primo array e pusho le proprietà nome e faults dentro nuovo array
 
 for (let j = 0; j < team.length; j++) {
-
   newTeam.push({
     nome: team[j].nome,
-    falli: team[j].faults,
-  })
+    faults: team[j].faults,
+  });
 }
-  
-console.log(newTeam)
 
+console.log(newTeam);
